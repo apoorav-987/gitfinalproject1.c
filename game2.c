@@ -22,3 +22,13 @@ int game(char you, char computer)
 
 	// If user's choice is stone and
 	// computer's choice is scissor
+	if (you == 's' && computer == 'z')
+		return 1;
+
+	// If user's choice is scissor and
+	// computer's choice is stone
+	else if (you == 'z' && computer == 's')
+		return 0;
+
+	// If user's choice is paper and
+	// computer's choice is scissor
