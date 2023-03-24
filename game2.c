@@ -11,3 +11,14 @@ int game(char you, char computer)
 	// has choose the same thing
 	if (you == computer)
 		return -1;
+		// If user's choice is stone and
+	// computer's choice is paper
+	if (you == 's' && computer == 'p')
+		return 0;
+
+			// If user's choice is paper and
+			// computer's choice is stone
+			else if (you == 'p' && computer == 's') return 1;
+
+	// If user's choice is stone and
+	// computer's choice is scissor
