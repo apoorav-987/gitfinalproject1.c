@@ -32,3 +32,13 @@ int game(char you, char computer)
 
 	// If user's choice is paper and
 	// computer's choice is scissor
+	if (you == 'p' && computer == 'z')
+		return 0;
+
+	// If user's choice is scissor and
+	// computer's choice is paper
+	else if (you == 'z' && computer == 'p')
+		return 1;
+}
+
+// Driver Code
